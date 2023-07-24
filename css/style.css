@@ -1,0 +1,251 @@
+body {
+   	font-size: 12px;
+    line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0;
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+textarea {
+    resize: vertical;
+}
+a {
+	cursor: pointer;
+	text-decoration: none;	
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+}
+p,
+pre {
+    margin: 0;
+	padding: 0;
+}
+header,
+section,
+footer,
+article {
+	display: block;	
+}
+/* Custom styles
+-------------------------------------------------------- */
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+body {
+    font-family: 'calendas_plusregular', serif;
+    color: #fff;
+    font-size: 21px;
+    -webkit-font-feature-settings: "liga", "dlig";
+       -moz-font-feature-settings: "liga=1, dlig=1";
+        -ms-font-feature-settings: "liga", "dlig";
+         -o-font-feature-settings: "liga", "dlig";
+            font-feature-settings: "liga", "dlig";
+    background: url(../gfx/bg.jpg) center center no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+            background-size: cover;
+}
+p {
+    font-family: 'calendas_plusitalic', serif;
+    font-size: 18px;
+/*    margin-top: 0.5em;*/
+    margin-bottom: 1.5em;
+    line-height: 1.9em;
+}
+p:last-child {
+    margin-bottom: 0;
+}
+p a {
+    display: block;
+    color: #fff;
+    margin-top: 1em;
+}
+.menu-course {
+    margin-top: 1.3em;
+    margin-bottom: 0;
+    line-height: 1.5em;
+}
+.menu-or {
+    color: #bea20d;
+    margin-bottom: -1em;;
+}
+h1, h2, h3 {
+    text-align: center;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1em;
+}
+h1 {
+    font-size: 3em;
+}
+h2 {
+    color: #bea20d;
+}
+h2 small {
+    color: #fff;
+    font-size: 0.7em;   
+}
+
+.cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+.center {
+    text-align: center;
+}
+strong {
+    font-weight: normal;
+    font-family: 'calendas_plusbold', serif;
+}
+.column-1-2 {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    float: left;
+    width: 50%;
+    padding: 15px;
+/*    padding-right: 5px;*/
+    text-align: right;
+}
+.column-1-2:nth-child(even) {
+    text-align: left;
+/*    padding-left: 5px;*/
+}
+.column-1-2 h1,
+.column-1-2 h2,
+.column-1-2 h3 {
+    text-align: right;
+}
+.column-1-2:nth-child(even) h1,
+.column-1-2:nth-child(even) h2,
+.column-1-2:nth-child(even) h3 {
+    text-align: left;
+}
+.leaves {
+    height: 200px;
+    background: url(../gfx/pattern.png) center center no-repeat;
+    margin: 0 auto;
+}
+
+.page-nav-holder {
+    display: table;
+    position: fixed;
+    width: 28%;
+    min-width: 330px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #000;
+}
+.page-logo-link {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    width: 292px;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+.page-nav {
+    text-align: center;
+    line-height: 2em;
+}
+.page-nav-link {
+    font-family: 'calendas_plusitalic', serif;
+    color: #fff;
+    display: block;
+}
+p a:hover,
+.page-nav-link.active,
+.page-nav-link:hover {
+    color: #bea20d;
+}
+
+.content-holder {
+    display: table;
+    width: 72%;
+    height: 100%;
+}
+.content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.content-block {
+    width: 60%;
+    padding: 40px;
+    margin: 0 auto;
+    background: #000;
+}
+.content-block img {
+    max-width: 100%;
+    width: 100%;
+    margin: 20px 0;
+}
+/* Custom styles
+-------------------------------------------------------- */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+.reset {
+	padding: 0;
+	margin: 0;
+}
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul.reset li {
+	list-style: none;
+}
+
+@media only screen and (max-width: 1400px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.15em;
+    }
+    .content-holder {
+        width: 100%;
+        display: block;
+        height: auto;
+        margin-bottom: 2em;
+    }
+    .page-nav-holder {
+        position: static;
+        width: 100%;
+        padding: 2em 0;
+        margin-bottom: 2em;
+    }
+    #home {
+        display: none;
+    }
+    .column-1-2 {
+        float: none;
+        width: 100%;
+        text-align: center !important;
+    }
+    .column-1-2 h2 {
+        text-align: center !important;
+    }
+}
